@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "start": "node Server/src/server_bridge.js",
-    "build": "node Server/src/server_bridge.js",
+    "build": "echo \"no build step\"",
     "dev": "nodemon Server/src/server_bridge.js"
   },
   "dependencies": {
