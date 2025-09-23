@@ -139,7 +139,11 @@ wss.on("connection", (client, req) => {
                     conversation: {
                         text_only: false,
                         agent_output_audio_format: "pcm_16000",
-                        user_input_audio_format: "pcm_16000"
+                        user_input_audio_format: "pcm_16000",
+                        model_id: "eleven_multilingual_v2",
+                        agent: {
+                            voice: { voice_id: "6pVydnYcVtMsrrSeUKs6" }
+                        }
                     }
                 }
             }
