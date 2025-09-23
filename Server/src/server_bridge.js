@@ -209,9 +209,18 @@ wss.on("connection", (client, req) => {
     });
 });
 
-server.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-    console.log(`🔗 WS path ws://localhost:${PORT}/ws/app`);
+// / OLD
+// server.listen(PORT, () => {
+//   console.log(`🚀 Server running on http://localhost:${PORT}`);
+//   console.log(`🔗 WS path ws://localhost:${PORT}/ws/app`);
+// });
+
+// NEW
+const HOST = "0.0.0.0";
+const port = "8080";
+server.listen(PORT, HOST, () => {
+    console.log(`🚀 Server running on http://${HOST}:${port}`);
+    console.log(`🔗 WS path ws://${HOST}:${port}/ws/app`);
 });
 
 // graceful shutdown
