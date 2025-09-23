@@ -217,10 +217,10 @@ wss.on("connection", (client, req) => {
 
 // NEW
 const HOST = "0.0.0.0";
-const port = "8080";
+const port = "8090";
 server.listen(PORT, HOST, () => {
-    console.log(`🚀 Server running on http://${HOST}:${port}`);
-    console.log(`🔗 WS path ws://${HOST}:${port}/ws/app`);
+    console.log(`🚀 Server running on http://${HOST}:${PORT}`);
+    console.log(`🔗 WS path ws://${HOST}:${PORT}/ws/app`);
 });
 
 // graceful shutdown
